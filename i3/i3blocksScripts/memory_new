@@ -1,0 +1,9 @@
+#!/bin/bash
+total=$(free -m| grep Mem: | cut -c 10-20)
+TotalG=$(($total/1000))
+used=$(free -m| grep Mem: | cut -c 25-39)
+UsedG=$(($used/1000))
+perc=$(($used*100/$total))
+echo $used"/"$total "("$perc"%)" 
+
+

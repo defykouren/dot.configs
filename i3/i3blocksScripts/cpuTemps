@@ -1,0 +1,2 @@
+#!/bin/bash	
+sensors | grep Package | cut -c 17-23
