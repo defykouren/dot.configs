@@ -1,12 +1,12 @@
 #1/bin/bash
-git clone https://github.com/defykouren/dot.configs.git
-cd dot.configs/i3
 
-cp config ~/.config/i3/ 
+mkdir ~/.config/i3
+cp config ~/.config/i3/.
+mkdir ~/.config/i3blocks/
 cp i3blocks.conf ~/.config/i3blocks/
 
 
 mkdir /home/$USER/scripts
-cp i3blocksScripts /home/$User/scripts/
+cp -r i3blocksScripts /home/$User/scripts/
 
 
