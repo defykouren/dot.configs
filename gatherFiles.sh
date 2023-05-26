@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#~~~~~~~~~~bashrc~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cp ~/.bashrc bashrc/.
+
 #~~~~~~~~~~~~~i3~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 cp ~/.config/i3/config i3/.
 cp ~/.config/i3blocks/i3blocks.conf i3/.
