@@ -1,11 +1,7 @@
-# dot.configs
-# Primary header 
-**Panos Fykouras .config Files**
+# **Panos Fykouras .config Files**
+Use them as you please.
 
-## Secondary header (similar to HTML H2 tag)
-i3 (i3blocks, rofi)
+## i3
+(i3blocks, rofi, thunar)
 ![alt text](pictures/i3.png)
-### Tertiary header (similar to HTML H3 tag)
 
-#### Quaternary header (similar to HTML H4 tag)
-These are my personal .configs.
