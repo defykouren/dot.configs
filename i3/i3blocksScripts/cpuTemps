@@ -1,2 +1,5 @@
 #!/bin/bash	
+# Memory Percentage Used
+# Panos Fykouras
+# panosfykouras@gmail.com
 sensors | grep Package | cut -c 17-23

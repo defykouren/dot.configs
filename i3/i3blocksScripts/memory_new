@@ -1,4 +1,7 @@
 #!/bin/bash
+# Memory Percentage Used
+# Panos Fykouras
+# panosfykouras@gmail.com
 total=$(free -m| grep Mem: | cut -c 10-20)
 TotalG=$(($total/1000))
 used=$(free -m| grep Mem: | cut -c 25-39)

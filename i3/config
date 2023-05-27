@@ -191,6 +191,14 @@ bar {
 	position top
         status_command i3blocks -c /home/$USER/.config/i3blocks/i3blocks.conf
 	i3bar_command i3bar --transparency
+	colors{
+		background #000033		
+		statusline  #ffffff
+		separator #ff7747
+		focused_workspace  #586e75 #ff7747  #ffffff
+        	active_workspace   #ff7747 #5f676a #ff7747
+        	inactive_workspace #ff7747 #222222 #ff7747
+		}
 	}	
   
 client.focused  #073642  #ff6342 #fdf6e3 #6c71c4
@@ -351,10 +359,11 @@ exec --no-startup-id nitrogen --head=0 --set-tiled --random /run/media/HDD/Pictu
 # Print screen
 bindsym Print exec flameshot gui --clipboard
 bindsym Shift+Print exec flameshot gui --path /home/$USER/Desktop
+bindsym Control+Print exec flameshot screen --number 0 --path /home/$USER/Desktop
+bindsym Control+Shift+Print exec flameshot screen --number 1 --path /home/$USER/Desktop
+
 
 # Floating Software
 #for_window [class="Skype"] floating enable
 for_window [class="Spotify"] floating enable
 
-#Programms to install
-#i3-wm dmenu i3status nitrogen redshift picom i3blocks lxappearance ttf-font-awesome
