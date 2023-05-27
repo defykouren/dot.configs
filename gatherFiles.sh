@@ -1,10 +1,10 @@
 #!/bin/bash
 
 #~~~~~~~~~~bashrc~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-cp ~/.bashrc bashrc/.
+rsync -av ~/.bashrc bashrc/.
 
 #~~~~~~~~~~~~~i3~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-cp ~/.config/i3/config i3/.
-cp ~/.config/i3blocks/i3blocks.conf i3/.
-cp -r ~/scripts/i3blocksScripts i3/.
+rsync -av ~/.config/i3/config i3/.
+rsync -av ~/.config/i3blocks/i3blocks.conf i3/.
+rsync -av --delete -r ~/scripts/i3blocksScripts i3/.
 
