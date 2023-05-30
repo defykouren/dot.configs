@@ -1,0 +1,15 @@
+#!/bin/bash
+
+date '+%d-%m-%Y'
+
+[[ $BLOCK_BUTTON = "1" ]] && xterm -geometry 20x9+1790+0 -bg black -fg white -hold -e 'cal' &
+
+sleep 5s
+xprop -name cal | grep _NET_WM_PID|kill $(cut -c 24-)
+
+
+
+#xterm -geometry 20x9+1790+0 -bg black -fg white -hold -e 'cal' &
+#sleep 5s
+#xprop -name cal | grep _NET_WM_PID|kill $(cut -c 25-)
+

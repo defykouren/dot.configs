@@ -4,10 +4,10 @@ xorg-apps
 xorg-xinit 
 gvim 
 konsole 
+xterm
 thunar 
 firefox 
 thunderbird 
-git 
 i3-wm
 i3-gaps 
 i3blocks 

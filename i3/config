@@ -12,7 +12,7 @@ exec --no-startup-id dex --autostart --environment i3
 
 # A compositor to add transparency effects
 #exec picom -f  
-#exec_always --no-startup-id picom -bc
+exec_always --no-startup-id picom -bc --config ~/.config/picom.conf
 
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
@@ -366,4 +366,5 @@ bindsym Control+Shift+Print exec flameshot screen --number 1 --path /home/$USER/
 # Floating Software
 #for_window [class="Skype"] floating enable
 for_window [class="Spotify"] floating enable
+for_window [class="XTerm"] floating enable border none floating_minimum_size 20 x 20
 

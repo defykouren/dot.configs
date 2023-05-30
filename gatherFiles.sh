@@ -7,4 +7,4 @@ rsync -av ~/.bashrc bashrc/.
 rsync -av ~/.config/i3/config i3/.
 rsync -av ~/.config/i3blocks/i3blocks.conf i3/.
 rsync -av --delete -r ~/scripts/i3blocksScripts i3/.
-
+rsync -av ~/.config/picom.conf i3/.

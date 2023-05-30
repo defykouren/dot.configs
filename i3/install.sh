@@ -2,6 +2,7 @@
 
 mkdir ~/.config/i3
 cp config ~/.config/i3/.
+cp picom.conf ~/.config/
 mkdir ~/.config/i3blocks/
 cp i3blocks.conf ~/.config/i3blocks/
 cd ..
