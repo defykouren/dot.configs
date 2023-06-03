@@ -27,6 +27,7 @@ alias cp="cp -i"                          # confirm before overwriting something
 alias bottles="flatpak run  com.usebottles.bottles"
 alias ubuntu="distrobox enter ubuntu20.04"
 alias logout="sudo pkill -u panos"
+alias ytdl="yt-dlp --extract-audio --audio-format mp3 --audio-quality 0"
 #~~~~~~~~~~~~~~~~~~~~~~PackageManager~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 alias upd="sudo pacman -Syu;  yay -Syu; flatpak update"
 alias pinstall="sudo pacman -S"
@@ -38,8 +39,8 @@ alias hdd="cd /run/media/HDD/"
 alias sea="cd /run/media/Sea"
 alias svlt="cd /run/media/SSDVault"
 alias mnt='sudo mount -a'
-alias music='cd /run/media/HDD/Music/Downloads'
-alias music='cd /run/media/HDD/Music/Downloads'
+alias music='cd /run/media/HDD/Music/'
+alias musicdl='cd /run/media/HDD/Music/Downloads'
 alias repos='cd /run/media/HDD/Documents/repos'
 #~~~~~~~~~~~~~~~~~~~~~~ConfigFileEditing~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 alias bashrc='vim ~/.bashrc'
@@ -57,6 +58,7 @@ alias vpngr='sudo cyberghostvpn --torrent --country-code GR --connect'
 alias vpnstop='sudo cyberghostvpn --stop'
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+alias trans='trans de:en'
 neofetch
 
 

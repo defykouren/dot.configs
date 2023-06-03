@@ -91,3 +91,5 @@ fi
 echo "${full_text}"
 echo "${WEATHER_TEMP}°C "
 echo "${WEATHER_COLOR}"
+
+

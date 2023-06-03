@@ -191,6 +191,7 @@ bar {
 	position top
         status_command i3blocks -c /home/$USER/.config/i3blocks/i3blocks.conf
 	i3bar_command i3bar --transparency
+	bindsym $BLOCK_BUTTON = "3" [class="XTerm"] kill
 	colors{
 		background #000033		
 		statusline  #ffffff
@@ -347,6 +348,9 @@ bindsym Mod4+b exec firefox
 # File Manager
 bindsym Mod4+e exec thunar
 
+#Default Music Player
+bindsym Mod4+m exec clementine -f
+
 # Keyboard Layouts
 exec --no-startup-id setxkbmap -layout us,gr -option 'grp:win_space_toggle'
 
@@ -364,7 +368,7 @@ bindsym Control+Shift+Print exec flameshot screen --number 1 --path /home/$USER/
 
 
 # Floating Software
-#for_window [class="Skype"] floating enable
+for_window [class="Steam"] border none
 for_window [class="Spotify"] floating enable
-for_window [class="XTerm"] floating enable border none floating_minimum_size 20 x 20
-
+for_window [class="Skype"] floating enable boarder none
+for_window [class="XTerm"] floating enable  border pixel 1 

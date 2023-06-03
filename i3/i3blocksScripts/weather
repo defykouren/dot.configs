@@ -1,0 +1,11 @@
+#!/bin/bash
+# Weather Report
+# Panos Fykouras
+# panosfykouras@gmail.com
+curl -Ss 'https://wttr.in?0&T&Q' | cut -c 16- | head -2 | xargs echo
+
+case "$BLOCK_BUTTON" in
+	1) xterm -geometry 125x40+1156+0 -bg black -fg white -hold -e 'curl wttr.in ' ;;
+	3) exec $(xprop -name "curl wttr.in " | grep _NET_WM_PID | kill $(cut -c 24-));; 
+esac	
+
