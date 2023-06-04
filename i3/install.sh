@@ -9,7 +9,8 @@ cd ..
 cp -r pictures/Background ~/Pictures/
 
 mkdir /home/$USER/scripts
-rsync -av  i3blocksScripts /home/$USER/scripts/
+mkdir home/$USER/scripts/i3blocksScripts
+rsync -av  i3blocksScripts/ /home/$USER/scripts/i3blocksScripts/
 sudo chmod +x /home/$USER/scripts/i3blocksScripts/*
 
 
