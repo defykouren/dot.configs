@@ -10,7 +10,7 @@ cp -r pictures/Background ~/Pictures/
 
 mkdir /home/$USER/scripts
 cp -r i3blocksScripts /home/$USER/scripts/
-
+sudo chmod +x /home/$USER/scripts/i3blocksScripts/*
 sudo pacman -Syu $(cat packageList)
 
 cp /etc/X11/xinit/xinitrc ~/.xinitrc

@@ -370,5 +370,6 @@ bindsym Control+Shift+Print exec flameshot screen --number 1 --path /home/$USER/
 # Floating Software
 for_window [class="Steam"] border none
 for_window [class="Spotify"] floating enable
+for_window [class="Flameshot"] floating enable
 for_window [class="Skype"] floating enable boarder none
 for_window [class="XTerm"] floating enable  border pixel 1 
