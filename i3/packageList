@@ -3,7 +3,8 @@ xorg-server
 xorg-apps 
 xorg-xinit 
 gvim 
-konsole 
+konsole
+rsync 
 xterm
 thunar 
 firefox 

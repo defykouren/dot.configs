@@ -1,16 +1,18 @@
 #1/bin/bash
 
 mkdir ~/.config/i3
-cp config ~/.config/i3/.
-cp picom.conf ~/.config/
+rsync -av config ~/.config/i3/.
+rsync -av  picom.conf ~/.config/
 mkdir ~/.config/i3blocks/
-cp i3blocks.conf ~/.config/i3blocks/
+rsync -av i3blocks.conf ~/.config/i3blocks/
 cd ..
 cp -r pictures/Background ~/Pictures/
 
 mkdir /home/$USER/scripts
-cp -r i3blocksScripts /home/$USER/scripts/
+rsync -av  i3blocksScripts /home/$USER/scripts/
 sudo chmod +x /home/$USER/scripts/i3blocksScripts/*
+
+
 sudo pacman -Syu $(cat packageList)
 
 cp /etc/X11/xinit/xinitrc ~/.xinitrc
