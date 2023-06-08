@@ -15,6 +15,11 @@ exec --no-startup-id dex --autostart --environment i3
 exec_always --no-startup-id picom -bc --config ~/.config/picom.conf
 
 
+# Screen Saver 
+# When screens turn off for power saving
+exec --no-startup-id xset s 3600
+#exec --no-startup-id xset s off 
+
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
@@ -358,7 +363,7 @@ exec --no-startup-id setxkbmap -layout us,gr -option 'grp:win_space_toggle'
 exec --no-startup-id redshift -l 48.135124:11.581981 -5700:3600 
 
 # Desktop Background 
-exec --no-startup-id nitrogen --head=0 --set-tiled --random /run/media/HDD/Pictures/Random\ pics/Backround/ ; nitrogen --head=1 --set-tiled --random /run/media/HDD/Pictures/Random\ pics/Backround/
+exec  --no-startup-id nitrogen --head=0 --set-tiled --random /home/$USER/Pictures/Background/ ; nitrogen --head=1 --set-tiled --random /home/$USER/Pictures/Background/ 
 
 # Print screen
 bindsym Print exec flameshot gui --clipboard
