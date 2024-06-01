@@ -16,7 +16,7 @@
 
 3. Make the install script executable
 
-(**!NOTE:Do not use the install script before reviewing it!**)
+(**! NOTE: Do not use the install script before reviewing it!**)
 
 `chmod +x install.sh`
 
