@@ -1,4 +1,4 @@
-# **Panos Fykouras .config Files**
+# **dot.config Files**
 Use them as you please.
 
 ## i3
@@ -7,13 +7,13 @@ Use them as you please.
 
 ### Installation
 1. Clone repo
-    'git clone https://github.com/defykouren/dot.configs.git'
+`git clone https://github.com/defykouren/dot.configs.git`
 
 2. Change directory to the repo
-    'cd ~/dot.config/i3/'
+`cd ~/dot.config/i3/`
 
 3. Make the install script executable
-    'chmod +x install.sh'
+`chmod +x install.sh`
 
 4. Install
-    './install.sh'
+`./install.sh`
