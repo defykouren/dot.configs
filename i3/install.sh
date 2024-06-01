@@ -11,9 +11,11 @@ cd ..
 cp -r pictures/Background ~/Pictures/
 
 mkdir /home/$USER/scripts
-mkdir home/$USER/scripts/i3blocksScripts
+mkdir /home/$USER/scripts/i3blocksScripts
 rsync -av  i3blocksScripts/ /home/$USER/scripts/i3blocksScripts/
 sudo chmod +x /home/$USER/scripts/i3blocksScripts/*
+
+cp ../bashrc/.bashrc /home/$USER/.
 
 cp /etc/X11/xinit/xinitrc ~/.xinitrc
 
