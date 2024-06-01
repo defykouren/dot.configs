@@ -1,5 +1,7 @@
 #1/bin/bash
 
+sudo pacman -Syu $(cat packageList)
+
 mkdir ~/.config/i3
 rsync -av config ~/.config/i3/.
 rsync -av  picom.conf ~/.config/
@@ -12,9 +14,6 @@ mkdir /home/$USER/scripts
 mkdir home/$USER/scripts/i3blocksScripts
 rsync -av  i3blocksScripts/ /home/$USER/scripts/i3blocksScripts/
 sudo chmod +x /home/$USER/scripts/i3blocksScripts/*
-
-
-sudo pacman -Syu $(cat packageList)
 
 cp /etc/X11/xinit/xinitrc ~/.xinitrc
 
