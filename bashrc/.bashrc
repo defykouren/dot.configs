@@ -17,6 +17,9 @@ if [ "$XDG_SESSION_TYPE" == "wayland" ]; then
     export MOZ_ENABLE_WAYLAND=1
 fi
 
+#Default Editor
+export EDITOR=vim
+
 ### Aliases ###
 
 #~~~~~~~~~~~~~~~~~~~~~~General~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -25,11 +28,14 @@ alias v="vim" # when typing vi, vim comes up
 alias sv="sudo vim"
 alias cp="cp -i"                          # confirm before overwriting something
 alias bottles="flatpak run  com.usebottles.bottles"
-alias ubuntu="distrobox enter ubuntu20.04"
+alias ubuntu="distrobox enter ubuntu"
 alias logout="sudo pkill -u panos"
 alias ytdl="yt-dlp --extract-audio --audio-format mp3 --audio-quality 0"
+alias pie='ssh panos@192.168.2.10'
+alias bee='ssh panos@192.168.2.20'
+alias resetplasma='plasmashell --replace & disown'
 #~~~~~~~~~~~~~~~~~~~~~~PackageManager~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-alias upd="sudo pacman -Syu;  yay -Syu; flatpak update"
+alias upd="sudo pacman -Syu;  yay -Syu; flatpak update; distrobox-upgrade --all"
 alias pinstall="sudo pacman -S"
 alias psearch="pacman -Ss"
 alias premove='sudo pacman -Rs'
@@ -39,11 +45,13 @@ alias hdd="cd /run/media/HDD/"
 alias sea="cd /run/media/Sea"
 alias svlt="cd /run/media/SSDVault"
 alias mnt='sudo mount -a'
-alias music='cd /run/media/HDD/Music/'
 alias musicdl='cd /run/media/HDD/Music/Downloads'
 alias repos='cd /run/media/HDD/Documents/repos'
+alias mntntfs='if  [ ! -d "/run/media/ntfs" ]; then sudo  mkdir /run/media/ntfs; fi && sudo mount -t ntfs3 -o force /dev/sdb3 /run/media/ntfs'
+alias umntntfs='sudo umount /dev/sdb3'
 #~~~~~~~~~~~~~~~~~~~~~~ConfigFileEditing~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 alias bashrc='vim ~/.bashrc'
+alias sbashrc='source ~/.bashrc'
 alias i3cnf='vim ~/.config/i3/config'
 alias i3bcnf='vim ~/.config/i3blocks/i3blocks.conf'
 
