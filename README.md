@@ -1,5 +1,5 @@
 # **dot.config Files**
-Use them as you please.
+## Used with [Arch Linux](https://archlinux.org/download/)
 
 ## i3
 (i3blocks, rofi, thunar)
@@ -7,13 +7,18 @@ Use them as you please.
 
 ### Installation
 1. Clone repo
+
 `git clone https://github.com/defykouren/dot.configs.git`
 
 2. Change directory to the repo
+
 `cd ~/dot.config/i3/`
 
 3. Make the install script executable
+**!NOTE:Do not use the install script before reviewing it!.**
+
 `chmod +x install.sh`
 
 4. Install
+
 `./install.sh`
